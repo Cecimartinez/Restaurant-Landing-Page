@@ -2,6 +2,7 @@ import { Home } from "./pages/Home/Home"
 import './App.css'
 import { Navbar } from "./components/Navbar/Navbar"
 import { About } from "./pages/About/About"
+import { Work } from "./pages/Work/Work"
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Navbar/>
         <Home/>
         <About/>
+        <Work/>
       </div>
     </>
   )
