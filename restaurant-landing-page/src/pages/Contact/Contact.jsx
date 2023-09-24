@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <div className="contact-page-wrapper flex flex-col items-center justify-center my-24 mx-0">
+    <div name="contact" className="contact-page-wrapper flex flex-col items-center justify-center my-24 mx-0">
       <h1 className="primary-heading max-w-4xl text-3xl font-bold text-gray-700">¿Tienes alguna pregunta en mente?</h1>
       <h1 className="primary-heading text-3xl font-bold text-gray-700">Permítenos ayudarte</h1>
       <div className="contact-form-container bg-white w-full flex mt-12 items-center p-4 rounded-3xl">

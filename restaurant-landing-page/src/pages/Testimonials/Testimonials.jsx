@@ -2,8 +2,8 @@ import ProfilePic from "../../assets/john-doe-image.png";
 
 export const Testimonials = () => {
   return (
-    <>
-      <div className="work-section-wrapper mt-14">
+  
+      <div className="work-section-wrapper mt-14" name="testimonials">
         <div className="work-section-top flex justify-center items-center flex-col">
           <p className="primary-subheading text-center text-yellow-500 font-semibold text-lg">Testimonial</p>
           <h1 className="primary-heading font-bold text-2xl text-gray-700 my-4">What They Are Saying</h1>
@@ -40,6 +40,5 @@ export const Testimonials = () => {
           <h2 className="mt-6">John Doe</h2>
         </div>
       </div>
-    </>
   );
 };

@@ -22,16 +22,16 @@ export const Work = () => {
   ];
 
   return (
-    <div className="work-section-wrapper mt-14">
+    <div name="work" className="work-section-wrapper mt-20">
       <div className="work-section-top flex justify-center items-center flex-col">
         <p className="primary-subheading text-center text-yellow-500 font-semibold text-lg">Cómo Funciona</p>
-        <h1 className="primary-heading font-bold text-2xl text-gray-700 my-4">Descubre Nuestro Proceso</h1>
+        <h1 className="primary-heading font-bold text-2xl text-gray-700 my-2">Descubre Nuestro Proceso</h1>
         <p className="primary-text text-center">
           Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
           elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
         </p>
       </div>
-      <div className="work-section-bottom mt-20 flex justify-center items-center flex-wrap">
+      <div className="work-section-bottom mt-10 flex justify-center items-center flex-wrap">
         {workInfoData.map((data) => (
           <div className="work-section-info py-8 px-4 my-4 mx-8 bg-white flex flex-col justify-center items-center rounded-2xl text-gray-700" key={data.title}>
             <div className="info-boxes-img-container">

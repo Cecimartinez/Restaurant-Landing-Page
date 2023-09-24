@@ -3,7 +3,7 @@ import BannerImageBg from "../../assets/home-banner-background.png";
 
 export const Home = () => {
   return (
-    <div className="home-container">
+    <div name="home" className="home-container">
       <div className="home-banner-container relative flex pt-3">
         <div className="home-bannerImage-container absolute ">
           <img src={BannerImageBg} alt="Banner Background" className="w-full h-full object-cover" />

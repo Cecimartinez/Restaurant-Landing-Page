@@ -3,7 +3,7 @@ import AboutBackgroundImage from "../../assets/food-about.png";
 
 export const About = () => {
   return (
-    <div className="about-section-container mt-40 relative flex items-center justify-between">
+    <div name="about" className="about-section-container mt-40 relative flex items-center justify-between">
       <div className="about-background-image-container absolute">
         <img src={AboutBackground} alt="" className="max-w-full" />
       </div>
