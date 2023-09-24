@@ -14,14 +14,9 @@
 body {
   max-width: 100%;
   overflow-x: hidden;
-}
-
-body {
   background-color: #f6f6f6;
 }
-
 /* ------- */
-
 /* nav */
 nav {
   min-height: 90px;
@@ -60,7 +55,6 @@ nav {
 }
 
 /* contact */
-
 .contact-form-container {
   max-width: 700px;
 
@@ -69,27 +63,6 @@ nav {
   padding: 0.5rem 1rem;
 }
 
-/* footer */
-.footer-logo-container {
-  max-width: 110px;
-}
-
-.footer-icons svg {
-  font-size: 1.5rem;
-  margin-right: 1.25rem;
-  color: #585858;
-}
-
-.footer-section-two {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-}
-.footer-section-columns {
-  display: flex;
-  flex-direction: column;
-  min-width: 190px;
-}
 .footer-section-columns span {
   margin: 0.25rem 0rem;
   font-weight: 600;
@@ -177,23 +150,19 @@ nav {
   .primary-subheading {
     text-align: center;
   }
-  .watch-video-button {
-    margin-left: 0rem !important;
-    margin-top: 1rem;
-    font-size: 1rem !important;
-  }
-  .watch-video-button svg {
-    margin-right: 0.5rem !important;
-  }
   .about-section-image-container {
     margin-right: 0rem !important;
   }
+
+  
   .work-section-wrapper {
     margin-top: 5rem !important;
   }
   .work-section-bottom {
     margin-top: 1rem !important;
   }
+
+
   .contact-form-container {
     padding: 0.5rem !important;
     flex-direction: column;
@@ -207,16 +176,6 @@ nav {
     padding: 0.5rem 1rem !important;
     margin-bottom: 0.8rem !important;
     text-align: center;
-  }
-  .footer-wrapper {
-    flex-direction: column;
-  }
-  .footer-section-two {
-    flex-direction: column;
-    margin-top: 2rem;
-  }
-  .footer-section-columns {
-    margin: 1rem 0rem;
   }
   .App {
     max-width: 95vw;
