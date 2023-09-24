@@ -11,6 +11,7 @@ export const Navbar = () => {
         </div>
 
         <div className="navbar-links-container text-black">
+          {/* //aplicar mapeo con reactRouter */}
           <a href="">Home</a>
           <a href="">About</a>
           <a href="">Testimonials</a>
