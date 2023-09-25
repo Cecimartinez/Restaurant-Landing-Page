@@ -1,9 +1,14 @@
-import { ImageComponent } from "../../components/ImageComponent/ImageComponent";
-import { Button } from "../../components/Button/Button";
-import BannerImage from "../../assets/home-banner-image.png";
-import BannerImageBg from "../../assets/home-banner-background.png";
+import BannerImage from '../../assets/home-banner-image.png';
+import BannerImageBg from '../../assets/home-banner-background.png';
+import { ImageComponent, Button } from '../../components';
 
- export const Home = () => {
+export const Home = () => {
+  const pedidosYaUrl = 'https://www.pedidosya.com.ar/?sem_tracker=20571694544&pycat=googlesearch&cmp=&ag=pedidos%20ya%20%28bm%29&kwd=pedidos%20ya&mt=b&net=g&dev=c&sitelink=&gclid=Cj0KCQjwvL-oBhCxARIsAHkOiu0kGCVXeNAlOGjGxNec9o_vjXaWrXETPrCRC7u7IbyJHS0Ebn6txw4aAoCuEALw_wcB';
+
+  const handlePedidosYaClick = () => {
+    window.open(pedidosYaUrl, '_blank');
+  };
+
   return (
     <div name="home" className="home-container">
       <div className="home-banner-container relative flex pt-3">
@@ -15,7 +20,7 @@ import BannerImageBg from "../../assets/home-banner-background.png";
           />
         </div>
         <div className="home-text-section mt-10 z-10">
-          <h1 className="primary-heading text-3xl text-[#4c4c4c] font-semibold max-w-xl">
+          <h1 className="primary-heading text-3xl text-[#4c4c4c] font-bold max-w-xl">
             Tu comida favorita, fresca y lista para disfrutar.
           </h1>
           <p className="primary-text text-[#6a6a6a] font-medium text-base my-6 max-w-md">
@@ -23,6 +28,7 @@ import BannerImageBg from "../../assets/home-banner-background.png";
           </p>
 
           <Button
+            onClick={handlePedidosYaClick}
             label="Ordenar Ahora"
             className="secondary-button bg-[#fe9e0d] outline-none border-none py-4 px-9 rounded-3xl text-lg cursor-pointer font-semibold text-white flex items-center justify-center transition-all hover:bg-[#e48f0f]"
           >
@@ -42,4 +48,3 @@ import BannerImageBg from "../../assets/home-banner-background.png";
     </div>
   );
 };
-

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll'; 
+import { useState } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import Logo from "../../assets/foodie.png";
 import { Button } from "../Button/Button";
 import Drawer from "@mui/material/Drawer";
@@ -22,29 +22,34 @@ export const Navbar = () => {
     {
       text: "Home",
       icon: <HomeIcon />,
-      target: "home", 
+      target: "home",
     },
     {
-      text: "About",
+      text: "Nosotros",
       icon: <InfoIcon />,
-      target: "about", 
+      target: "about",
     },
     {
-      text: "Work",
+      text: "Cómo Funciona",
       icon: <InfoIcon />,
-      target: "work", 
+      target: "work",
     },
     {
-      text: "Testimonials",
+      text: "Testimonios",
       icon: <CommentRoundedIcon />,
-      target: "testimonials", 
+      target: "testimonials",
     },
     {
-      text: "Contact",
+      text: "Contacto",
       icon: <PhoneRoundedIcon />,
-      target: "contact", 
+      target: "contact",
     },
   ];
+
+  const pedidosYaUrl = "https://www.pedidosya.com.ar/?sem_tracker=20571694544&pycat=googlesearch&cmp=&ag=pedidos%20ya%20%28bm%29&kwd=pedidos%20ya&mt=b&net=g&dev=c&sitelink=&gclid=Cj0KCQjwvL-oBhCxARIsAHkOiu0kGCVXeNAlOGjGxNec9o_vjXaWrXETPrCRC7u7IbyJHS0Ebn6txw4aAoCuEALw_wcB";
+  const handlePedidosYaClick = () => {
+    window.open(pedidosYaUrl, '_blank');
+  };
 
   return (
     <nav className="flex items-center justify-between  ">
@@ -53,17 +58,17 @@ export const Navbar = () => {
       </div>
 
       <div className="navbar-links-container text-black">
-        <Link to="home" smooth={true} duration={500} className="text-lg font-semibold">Home</Link>
-        <Link to="about" smooth={true} duration={500} className="text-lg font-semibold">About</Link>
-        <Link to="work" smooth={true} duration={500} className="text-lg font-semibold">Work</Link>
-        <Link to="testimonials" smooth={true} duration={500} className="text-lg font-semibold">Testimonials</Link>
-        <Link to="contact" smooth={true} duration={500} className="text-lg font-semibold">Contact</Link>
-        <a href="#" className="text-2xl">
+        <Link to="home" smooth={true} duration={500} className="text-base font-semibold">Home</Link>
+        <Link to="about" smooth={true} duration={500} className="text-base font-semibold">Nosotros</Link>
+        <Link to="work" smooth={true} duration={500} className="text-base font-semibold">Cómo Funciona</Link>
+        <Link to="testimonials" smooth={true} duration={500} className="text-base font-semibold">Testimonios</Link>
+        <Link to="contact" smooth={true} duration={500} className="text-base font-semibold">Contacto</Link>
+        <a href={pedidosYaUrl} className="text-2xl" target="_blank" >
           <span className="material-symbols-outlined">
             shopping_cart
           </span>
         </a>
-        <Button className="primary-button bg-white border rounded-3xl text-lg font-semibold px-4" label="Bookings Now" />
+        <Button onClick={handlePedidosYaClick} className="primary-button bg-white border rounded-3xl text-lg font-semibold px-4" label="Bookings Now" />
       </div>
 
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
