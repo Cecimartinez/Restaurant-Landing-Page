@@ -1,6 +1,7 @@
 import PickMeals from "../../assets/pick-meals-image.png";
 import ChooseMeals from "../../assets/choose-image.png";
 import DeliveryMeals from "../../assets/delivery-image.png";
+import { ImageComponent } from "../../components/ImageComponent/ImageComponent";
 
 export const Work = () => {
   const workInfoData = [
@@ -35,7 +36,7 @@ export const Work = () => {
         {workInfoData.map((data) => (
           <div className="work-section-info py-8 px-4 my-4 mx-8 bg-white flex flex-col justify-center items-center rounded-2xl text-gray-700" key={data.title}>
             <div className="info-boxes-img-container">
-              <img src={data.image} alt="" className="max-w-md" />
+              <ImageComponent src={data.image} alt="" className="max-w-md"/>
             </div>
             <h2>{data.title}</h2>
             <p className="text-center flex flex-1 items-center font-semibold">{data.text}</p>
