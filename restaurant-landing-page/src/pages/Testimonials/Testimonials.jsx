@@ -11,8 +11,8 @@ export const Testimonials = () => {
   return (
     <div name="testimonials" className="work-section-wrapper mt-14">
       <div className="work-section-top flex justify-center items-center flex-col">
-        <p className="primary-subheading text-center text-yellow-500 font-semibold text-lg">Testimonios</p>
-        <h1 className="primary-heading font-bold text-2xl text-[#4c4c4c] my-4">Lo que dicen nuestros clientes</h1>
+        <h2 className="primary-subheading text-center text-yellow-500 font-semibold text-2xl">Testimonios</h2>
+        <h3 className="primary-heading font-bold text-xl text-[#4c4c4c] my-4">Lo que dicen nuestros clientes</h3>
         <p className="primary-text text-center  font-medium text-[#6a6a6a]">
           Nuestros clientes comparten sus experiencias con nosotros. Aquí tienes algunas de sus opiniones:
         </p>
@@ -27,7 +27,7 @@ export const Testimonials = () => {
             <div key={index}>{star}</div>
           ))}
         </div>
-        <h3 className="mt-6">John Doe</h3>
+        <h4 className="mt-6">John Doe</h4>
       </div>
     </div>
   );

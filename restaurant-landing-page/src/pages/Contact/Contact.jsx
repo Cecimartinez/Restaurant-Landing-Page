@@ -8,13 +8,13 @@ export const Contact = () => {
 
   return (
     <div name="contact" className="contact-page-wrapper flex flex-col items-center justify-center my-24 mx-0">
-      <p className="primary-subheading text-yellow-500 font-semibold text-lg">Contacto</p>
-      <h1 className="primary-heading max-w-4xl  font-bold text-2xl text-[#4c4c4c]">
+      <h2 className="primary-subheading text-yellow-500 font-semibold text-2xl">Contacto</h2>
+      <h3 className="primary-heading max-w-4xl  font-bold text-xl text-[#4c4c4c]">
         ¿Tienes alguna pregunta en mente?
-      </h1>
-      <h2 className="primary-heading text-xl mt-2 font-bold  text-[#4c4c4c]">
+      </h3>
+      <h4 className="primary-heading text-lg  font-bold  text-[#4c4c4c]">
         Permítenos ayudarte
-      </h2>
+      </h4>
       <form
         action="#"
         method="POST"

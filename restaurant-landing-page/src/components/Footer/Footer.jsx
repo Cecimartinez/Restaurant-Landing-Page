@@ -6,8 +6,8 @@ import Logo from "../../assets/foodie.png";
 
 export const Footer = () => {
   return (
-    <div className="footer-wrapper my-24 mx-0 flex flex-col md:flex-row justify-between mt-40">
-      <div className="footer-section-one mb-10 md:mb-0 md:mr-12">
+    <div className="footer-wrapper my-24 mx-2 px-14 flex flex-col md:flex-row justify-between mt-32">
+      <div className="footer-section-one mb-8 md:mb-0 md:mr-7">
         <div className="footer-logo-container max-w-xs">
           <img src={Logo} alt="Logo" className="w-20 h-20" />
         </div>
@@ -19,15 +19,15 @@ export const Footer = () => {
         </div>
       </div>
       <div className="footer-section-two flex flex-col md:flex-row">
-        <div className="footer-section-columns mb-6 md:mb-0 md:mr-12 flex flex-col">
+        <div className="footer-section-columns mb-2 md:mb-0 md:mr-12 flex flex-col">
           <span className="text-lg font-semibold">Home</span>
-          <span className="text-lg font-semibold">About</span>
-          <span className="text-lg font-semibold">Work</span>
-          <span className="text-lg font-semibold">Testimonials</span>
-          <span className="text-lg font-semibold">Contact</span>
+          <span className="text-lg font-semibold">Nosotros</span>
+          <span className="text-lg font-semibold">Cómo Funciona</span>
+          <span className="text-lg font-semibold">Testimonios</span>
+          <span className="text-lg font-semibold">Contacto</span>
         </div>
-        <div className="footer-section-columns mb-6 md:mb-0 md:mr-12 flex flex-col">
-          <span className="text-lg">244-5333-7783</span>
+        <div className="footer-section-columns mb-2 md:mb-0 md:mr-12 flex flex-col">
+          <span className="text-lg">+54 9 1146-5892</span>
 
           <span className="text-lg">contact@foodie.com</span>
         </div>

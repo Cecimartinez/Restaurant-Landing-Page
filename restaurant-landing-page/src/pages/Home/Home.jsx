@@ -11,7 +11,7 @@ export const Home = () => {
 
   return (
     <div name="home" className="home-container">
-      <div className="home-banner-container relative flex pt-3">
+      <div className="home-banner-container relative flex pt-2">
         <div className="home-bannerImage-container absolute">
           <ImageComponent
             alt="Banner Background"
@@ -19,7 +19,7 @@ export const Home = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="home-text-section mt-10 z-10">
+        <div className="home-text-section mt-6 z-10">
           <h1 className="primary-heading text-3xl text-[#4c4c4c] font-bold max-w-xl">
             Tu comida favorita, fresca y lista para disfrutar.
           </h1>

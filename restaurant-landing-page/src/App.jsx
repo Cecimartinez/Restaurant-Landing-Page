@@ -15,9 +15,7 @@ function App() {
     <>
       <div className='App'> 
       <Navbar />
-      <Element name="home">
         <Home />
-      </Element>
       <Element name="about"> 
         <About />
       </Element>

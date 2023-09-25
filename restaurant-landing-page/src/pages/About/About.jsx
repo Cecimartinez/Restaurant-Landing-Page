@@ -19,10 +19,10 @@ export const About = () => {
         <ImageComponent src={AboutBackgroundImage} className="max-w-full" />
       </div>
       <div className="about-section-text-container flex-1 justify-center flex flex-col max-w-lg">
-        <p className="primary-subheading text-yellow-500 font-semibold text-lg">Acerca de Nosotros</p>
-        <h1 className="primary-heading font-bold text-2xl text-[#4c4c4c]">
-          La Comida es una Parte Importante de una Dieta Equilibrada
-        </h1>
+        <h2 className="primary-subheading text-yellow-500 font-semibold text-2xl">Acerca de Nosotros</h2>
+        <h3 className="primary-heading font-bold text-xl text-[#4c4c4c]">
+          La comida es una parte importante de una dieta equilibrada
+        </h3>
         <p className="primary-text  text-[#6a6a6a] font-medium my-2">
           En nuestro restaurante, creemos que la comida es una parte fundamental de una vida saludable y equilibrada. Utilizamos ingredientes frescos y de alta calidad para preparar cada plato con amor y cuidado.
         </p>

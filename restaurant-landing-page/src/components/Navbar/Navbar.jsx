@@ -20,11 +20,6 @@ export const Navbar = () => {
 
   const menuOptions = [
     {
-      text: "Home",
-      icon: <HomeIcon />,
-      target: "home",
-    },
-    {
       text: "Nosotros",
       icon: <InfoIcon />,
       target: "about",
@@ -58,17 +53,16 @@ export const Navbar = () => {
       </div>
 
       <div className="navbar-links-container text-black">
-        <Link to="home" smooth={true} duration={500} className="text-base font-semibold">Home</Link>
-        <Link to="about" smooth={true} duration={500} className="text-base font-semibold">Nosotros</Link>
-        <Link to="work" smooth={true} duration={500} className="text-base font-semibold">Cómo Funciona</Link>
-        <Link to="testimonials" smooth={true} duration={500} className="text-base font-semibold">Testimonios</Link>
-        <Link to="contact" smooth={true} duration={500} className="text-base font-semibold">Contacto</Link>
+        <Link to="about" smooth={true} duration={500} className="text-base font-semibold cursor-pointer hover:text-gray-500">Nosotros</Link>
+        <Link to="work" smooth={true} duration={500} className="text-base font-semibold cursor-pointer  hover:text-gray-500">Cómo Funciona</Link>
+        <Link to="testimonials" smooth={true} duration={500} className="text-base font-semibold cursor-pointer  hover:text-gray-300">Testimonios</Link>
+        <Link to="contact" smooth={true} duration={500} className="text-base font-semibold cursor-pointer  hover:text-gray-300">Contacto</Link>
         <a href={pedidosYaUrl} className="text-2xl" target="_blank" >
           <span className="material-symbols-outlined">
             shopping_cart
           </span>
         </a>
-        <Button onClick={handlePedidosYaClick} className="primary-button bg-white border rounded-3xl text-lg font-semibold px-4" label="Bookings Now" />
+        <Button onClick={handlePedidosYaClick} className="primary-button bg-white border rounded-3xl text-lg font-semibold px-4" label="Reservá ahora" />
       </div>
 
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
