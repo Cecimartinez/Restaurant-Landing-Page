@@ -19,16 +19,7 @@ body {
   overflow-x: hidden;
   background-color: #f6f6f6;
 }
-/* nav */
-nav {
-  min-height: 90px;
-}
-.navbar-links-container a {
-  margin-right: 3rem;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
+
 .primary-button {
   padding: 0.9rem 1.75rem;
   transition: 0.2s;
@@ -82,10 +73,10 @@ nav {
 }
 
 @media (max-width: 1000px) {
-  .navbar-links-container a {
+  /* .navbar-links-container a {
     margin-right: 1rem;
     font-size: 1rem;
-  }
+  } */
   .primary-button {
     font-size: 1rem;
   }
@@ -94,15 +85,15 @@ nav {
   }
 }
 @media (max-width: 800px) {
-  .nav-logo-container {
+  /* .nav-logo-container {
     max-width: 140px;
   }
-  .navbar-links-container {
+  /* .navbar-links-container {
     display: none;
-  }
-  .navbar-menu-container {
+  } */
+  /* .navbar-menu-container {
     display: flex;
-  }
+  } */ 
   .home-bannerImage-container {
     max-width: 450px;
   }
