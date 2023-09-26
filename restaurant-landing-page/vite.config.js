@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
 
   plugins: [react()],
-  base:"/Foodie/"
+  base:"https://cecimartinez.github.io/restaurant-foodie"
 
 })
