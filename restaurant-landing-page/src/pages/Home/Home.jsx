@@ -1,5 +1,7 @@
 import BannerImage from '../../assets/home-banner-image.png';
 import BannerImageBg from '../../assets/home-banner-background.png';
+import Logo from '../../assets/foodie.png';
+
 import { ImageComponent, Button } from '../../components';
 
 export const Home = () => {
@@ -20,6 +22,10 @@ export const Home = () => {
           />
         </div>
         <div className="home-text-section flex-col flex mt-24 z-10">
+
+          <div className="nav-logo-container my-4 ">
+            <img src={Logo} alt="Logo" className="w-20 h-20 " />
+          </div>
           <h1 className="primary-heading text-3xl text-[#4c4c4c] font-bold max-w-xl">
             Tu comida favorita, fresca y lista para disfrutar.
           </h1>

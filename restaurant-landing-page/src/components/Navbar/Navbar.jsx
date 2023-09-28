@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
-import Logo from "../../assets/foodie.png";
 
 export const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -45,18 +44,17 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="flex items-center justify-between">
-      <div className="nav-logo-container">
-        <img src={Logo} alt="Logo" className="w-20 h-20 mt-2" />
-      </div>
+    <nav className=" sm:transition-all flex md:flex lg:flex items-center justify-between pt-10 mt-2">
 
-      <div className="navbar-links-container text-black">
+
+      <div className="navbar-links-container text-black justify-between">
+
         {!isMobile ? (
           <>
-            <Link to="about" smooth={true} duration={500} className="text-base font-semibold cursor-pointer mx-2 my-1 hover:text-gray-600">Nosotros</Link>
-            <Link to="work" smooth={true} duration={500} className="text-base font-semibold cursor-pointer mx-2 -y1 hover:text-gray-600">Cómo Funciona</Link>
-            <Link to="testimonials" smooth={true} duration={500} className="text-base font-semibold cursor-pointer mx-2 my-1 hover:text-gray-300">Testimonios</Link>
-            <Link to="contact" smooth={true} duration={500} className="text-base font-semibold cursor-pointer mx-2 my-1 hover:text-gray-300">Contacto</Link>
+            <Link to="about" smooth={true} duration={500} className="text-base font-semibold cursor-pointer mx-2 my-1 hover:text-stone-600">Nosotros</Link>
+            <Link to="work" smooth={true} duration={500} className="text-base font-semibold cursor-pointer mx-2 -y1 hover:text-stone-600">Cómo Funciona</Link>
+            <Link to="testimonials" smooth={true} duration={500} className="text-base font-semibold cursor-pointer mx-2 my-1 hover:text-stone-600">Testimonios</Link>
+            <Link to="contact" smooth={true} duration={500} className="text-base font-semibold cursor-pointer mx-2 my-1 hover:text-stone-600">Contacto</Link>
           </>
         ) : (
           <>
